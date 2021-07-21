@@ -13,8 +13,7 @@ def get_top_n(n, ls):
     counter = list(Counter(ls).items())
     return [i for i, count in sorted(counter, key=lambda x: x[1])[-n:]]
 
-#hahahahha
-#lllll
+
 def home_view(request):
     # Tuples are required to allow search GET requests to be contructed from the
     # organism raw text instead of the formatted text. The other fields are
@@ -73,6 +72,7 @@ def help_contact_view(request):
     )
 
 
+# ddd
 def terms_privacy_view(request):
     return render(
         request,
